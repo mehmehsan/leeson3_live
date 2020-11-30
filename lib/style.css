@@ -11,6 +11,7 @@ body{
     sans-serif;
 
     margin: 0px;
+    background-color: white;
 }
 
 hr{
@@ -33,7 +34,7 @@ hr{
 .link{
     text-decoration: none;
 
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
 }
 
 .primary-link{
@@ -41,16 +42,12 @@ hr{
 
     border-radius: 3rem;
     color : white;
-    text-align: center;
-
 }
 
 .secondary-link {
     color: var(--primary-color);
     border-radius: 3rem;
     border: 1px solid var(--primary-color);
-    float: center;
-    
 }
 
 /** Lists **/
@@ -121,10 +118,9 @@ hr{
 
 .hero .hero-heading .header-inverted {
     color: var(--primary-color);
-   
 }
 
-.section h2{
+.section h3{
     text-align: center;
     padding: 2rem;
 }
@@ -146,11 +142,6 @@ hr{
 
 .footer .link{
     color: white;
-}
-
-.footer .footer-header{
-    font-weight: bold;
-    font-size: large;
 }
 
 .footer ul{
