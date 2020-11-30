@@ -92,3 +92,54 @@ hr{
     font-weight: bold;
 }
 
+/** header **/ 
+
+.hero{
+    padding: 2rem;
+
+}
+
+.hero .hero-img{
+    max-width: 350px;
+    display: block;
+    margin : auto;
+}
+
+.hero .hero-heading{
+    font-size : 2rem;
+    color : grey;
+    padding-top: 1rem;
+
+}
+
+.hero .hero-heading .header-inverted {
+    color: var(--primary-color);
+}
+
+.section h3{
+    text-align: center;
+    padding: 2rem;
+}
+
+.ow{
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+.footer{
+    background-color:var(--primary-color);
+
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+
+}
+
+.footer .link{
+    color: white;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
