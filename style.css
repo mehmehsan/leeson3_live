@@ -41,16 +41,19 @@ hr{
 
     border-radius: 3rem;
     color : white;
-    text-align: center;
+    
+}
 
+.div-link{
+    text-align: center;
 }
 
 .secondary-link {
     color: var(--primary-color);
     border-radius: 3rem;
     border: 1px solid var(--primary-color);
-    float: center;
-    
+    float: left;
+    margin: auto;
 }
 
 /** Lists **/
