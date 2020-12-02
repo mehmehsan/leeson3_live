@@ -17,6 +17,11 @@ hr{
     margin: 2rem 0rem;
 }
 
+/** margin **/
+.margin-md{
+    margin: 2rem;
+}
+
 /** container **/
 
 .container{
@@ -105,6 +110,7 @@ hr{
 
 .hero{
     padding: 2rem;
+    padding-top: 5rem;
 
 }
 
