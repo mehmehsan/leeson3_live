@@ -82,12 +82,14 @@ hr{
     color: white;
 
     border-bottom-left-radius: 1rem;
+
+
 }
 
 .navigation .link {
     color : white;
    
-   
+    margin-left: 0px;
 }
 
 .navigation .nav-pills{
@@ -95,7 +97,7 @@ hr{
     text-align: right;
     color: white;
     padding: 0rem 0rem;
-   
+  
 }
 
 .navigation .nav-bar{
@@ -104,9 +106,7 @@ hr{
     font-size: 1.1rem;
 }
 
-.navigation .link-active{
-    font-weight: bold;
-}
+
 
 
 
