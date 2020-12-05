@@ -69,7 +69,7 @@ hr{
 
 .list-item-inline{
     display: inline;
-    padding: 0rem 0.5rem;
+   
 }
 
 /** nav **/
@@ -94,6 +94,7 @@ hr{
     
     text-align: right;
     color: white;
+    padding: 0rem 0rem;
    
 }
 
