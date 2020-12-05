@@ -38,7 +38,7 @@ hr{
 .link{
     text-decoration: none;
 
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
 }
 
 .primary-link{
@@ -94,7 +94,7 @@ hr{
 
 .navigation .nav-pills{
     
-    text-align: left;
+    text-align: right;
     color: white;
      
 }
