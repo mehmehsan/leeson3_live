@@ -48,10 +48,91 @@
     </section>
 
     <section class="container container-center">
-        <h3>Lesson-01</h3>
-        <p>The stock rose 47 percent, 15 percent, and 28 percent in September, October, and November, respectively. In
-            FY21, so far, the stock has surged 320 percent to Rs 406.8 on December 1, 2020 from Rs 96.85 on March 31,
-            2020.</p>
+        <h3>Lesson-01 : Values, Types, and Operators</h3>
+        <h2>Values</h2>
+        <ul>
+            <li> A volatile memory has more than 30billions bits</li>
+            <li> bit accumulate a piece of information to form values</li>
+            <li> There are 6 basic types of values; number, Boolean, object, function and undefined</li>
+            <li> Values must have names to be identified and used</li>
+        </ul>
+        <h2>Numbers</h2>
+
+        - Js uses fixed no. of bits say 64 to store numbers
+        - 64 bits can be represented in 2^64 ways
+        - Sign and decimal place too occupies a bit each.
+        - Also exponential (e) can be used to represent large no. though not precise like pie
+
+        <h2>Arithmetic</h2>
+        - They perform operations with values using operator(*vv
+        - The operation is performed by precedence
+        - % gives remainder
+
+        <h2>Special no.</h2> 
+        - First two are infinity and -infinity#NaN
+
+        <h2>Strings</h2>
+        - Used under single/double quotes
+        -  \"\\n\"." indicates newline inserted
+        - Js uses 16 bits per string element
+        - "+" can be used to concatenates strings
+
+        <h2>Uniary operators</h2>
+        - console.log() produces one value
+        - Operators with 2 values are binary operators
+        -
+
+        <h2>Boolean</h2>
+        - Used for producing two value "on/off"
+
+        <h2>Comparison</h2>
+        - <(greater than), >(Less than), ==(equals), !=(not equal to) are comparitive operators.
+
+        <h2>Logical</h2>
+        - &&(and), !(not), ||(or) are logical operators
+
+        <h2>ternary operators</h2>
+        - console.log("A" > "a" ? true : false );
+        also called conditional operator.
+
+        <h2>Empty values</h2>
+        - no meaningful values
+        - null & not-defined
+
+        <h2>automatic type conversion</h2>
+        - convert one type of operator to heigher operator
+        - Ex. console.log("5" -1);
+        // -> 4
+        - Ex. console.log("5" + 1);
+        //-> 51, this concates string so gives such output
+
+        console.log(null== undefined);
+        //-> true
+        console.log( null == 0);
+        //-> false
+        console.log(0== false)
+        //->true
+        console.log(""==false)
+        //->true, holds true due to type conversion
+
+        Below is used to prohibit type conversion{
+        === means precisely equal to;
+        !== means not precisely equal to;
+        };
+
+        <h2>short circuiting</h2>
+        They return original left-handed value or right-handed;
+
+        - console.log(null || "ser")
+        //-> "ser" holds it bcz it is true.
+        - console.log("SAndy" || "user")
+        //-> SAndy
+
+        console.log(true || "x")
+        //-> true
+        console.log(false && "X"
+        //-> false
+            
         <a class="link secondary-link" href=" ">Read More !</a>
 
     </section>
