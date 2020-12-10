@@ -48,144 +48,69 @@
     </section>
 
     <section class="container container-center">
-        <h1> Lesson 04 : Data structures : Objects and arrays</h1>
-        <hr>
-
-        <p> Used to perform a set of operations and are called whenever used</p>
-
-        <p> Creetaed by a keyword function before it, consisting of a set of parameters and a body </p>
-
-        <h2> Parameters and scope <h2>
-                <li> variable inside functions are local to it </li>
-                <li> Variables outside funciton are global variable </li>
-
-                <h2> Nested loops </h2>
-                <li> a function created inside function create discrete localities </li>
-
-                <h2> Funciton as value</h2>
-                <li> a function create inside function create discrete localities </li>
-
-                <h2> Function as value </h2>
-                <li> funciton act as name a piece of code </li>
-
-                <h2> The call of stack</h2>
-                <li> The fucntion calls whenever included in statement & flow is in accordanace with it </li>
-                <li> If functions are called in a infinit way it returns too much recursion or out of stck space</li>
-
-                <p>
-                    Eg: function chicken() { <br>
-                    return eggs() <br>
-                    }<br>
-
-                    function egg () { <br>
-                    return chicken () <br>
-                    } <br>
-
-
-                    <h2> Optional argument </h2>
-                    <li> If too many arguements provided it will ignore others and reutrn first one</li>
-                    <li> Eg : alert("Hey","Hello","good morning"); returns Hey only </li>
-
-                    <li> Eg: function minus(a, b) {
-                        if (b === undefined) return -a;
-                        else return a - b;
-                        }
-                        console.log(minus(10));
-                        // → -10
-                        console.log(minus(10, 5));
-                        // → 5
-                    </li>
-
-                    <li> Eg2:
-                        function power(base, exponent = 2) {
-                        let result = 1;
-                        for (let count = 0; count < exponent; count++) { result *=base; } return result; }
-                            console.log(power(4)); // → 16 console.log(power(2, 6)); // This overwrites exponent
-                            element // → 64 </li> <h2> Closure
-            </h2>
-            <li> a function is called and local variables are re-created </li>
-            <li> being reference to any instance of local variable is called closure </li>
-
-            <h2> Recursion </h2>
-            <li>When function calls itself and stack doesn't gets overflowed is recursive property of function </li>
-            <li> function calls are 10 times slower than loops </li>
-
-
-            <h2>Arrow function </h2>
-            <li> (=>) used instead of keyword arrow </li>
-            <li> Eg; const power = (base,exponent) => {<br>
-                let result =1 ; <br>
-                for (let count = 0; count < exponent ; count++){ <br>
-                    result*=base;
-                    return result;
-                    };
-            </li>
-            <li> Arrow comes after list of parameters followed by it's body </li>
-
-            <h2> Growing function </h2>
-            <li> Adding more codes means pretending to make more mistakes </li>
-            <li> We can add functionality to add features to comply multiple functions </li>
-
-            <li> Eg: show no. of cows and chicken in three digit format <br>
-
-                function printFarmInventory(cows, chickens) { <br>
-                let cowString = String(cows); <br>
-                while (cowString.length < 3) { <br>
-                    cowString = "0" + cowString; <br>
-                    } <br>
-                    console.log(`${cowString} Cows`); <br>
-                    let chickenString = String(chickens); <br>
-                    while (chickenString.length < 3) { <br>
-                        chickenString = "0" + chickenString;<br>
-                        } <br>
-                        console.log(`${chickenString} Chickens`); <br>
-                        } <br>
-                        printFarmInventory(7, 11); <br>
-            </li>
-            <li>
-                Other way of doing it is add padding </li>
-            function printZeroPaddedWithLabel(number, label) { <br>
-            let numberString = String(number); <br>
-            while (numberString.length < 3) { <br>
-                numberString = "0" + numberString; <br>
-                } <br>
-                console.log(`${numberString} ${label}`); <br>
-                }<br>
-                function printFarmInventory(cows, chickens, pigs) { <br>
-                printZeroPaddedWithLabel(cows, "Cows");<br>
-                printZeroPaddedWithLabel(chickens, "Chickens");<br>
-                printZeroPaddedWithLabel(pigs, "Pigs"); <br>
-                } <br>
-                printFarmInventory(7, 11, 3);<br>
-
-                <li> This zero padding makes function it easier
-                    function zeroPad(number, width) {<br>
-                    let string = String(number); <br>
-                    while (string.length < width) {<br>
-                        string = "0" + string;<br>
-                        }<br>
-                        return string;<br>
-                        }<br>
-                        function printFarmInventory(cows, chickens, pigs) {<br>
-                        console.log(`${zeroPad(cows, 3)} Cows`);<br>
-                        console.log(`${zeroPad(chickens, 3)} Chickens`);<br>
-                        console.log(`${zeroPad(pigs, 3)} Pigs`);<br>
-                        }<br>
-                        printFarmInventory(7, 16, 3);<br>
-                </li>
-
-                <h2> Function and side effects</h2>
-                <li> Functions persist return values called as side effects </li>
-                <li> A pure function is such with no "side effect </li>
-                <li> side effects provide easy way to utilize a function, thus computing speed can be a reason to avoid
-                    purity</li>
+        <h1> Lesson 04 :  Data structures and arrays <h1>
+            <p> Numbers and strings are units and object comprises of set of units </p>
+            
+            <h2> Data set </h2>
+            <li> Js provides a sequence of data to store values called arrays </li
+            <li> Notations is [] for declaration of an array </li>
+            
+            <h2> Properties </h2>
+            <li> Using myString.length to access length of an array </li>
+            
+            <h2> Methods </h2>
+            <li> every string has toUpperCase() & toLowerCase() property to change casing of letters</li>
+            <li> Properties containing functions are called methods</li>
+            <li> Eg : let sequence = [1, 2, 3];<br>
+            sequence.push(4); <br>
+            sequence.push(5);<br>
+            console.log(sequence);<br>
+            // → [1, 2, 3, 4, 5]<br>
+            console.log(sequence.pop()); <br>
+            // → 5<br>
+            console.log(sequence); <br>
+            // → [1, 2, 3, 4]<br>
+            <br>
+            <li> The push functions add value in end of an array & pop removes last value of an array </li>
+            
+            <p> A stack is a data structure where we push values and pop in opposite order such that things added last is removed first</p>
+            
+            
+            <h2>Objects</h2>
+            <li> Grouping in single values and put it into an array </li>
+            <li> Braces either include a block element or describe an object </li>
+            
+            <li> delete is used to remove named property of an object </li>
+            
+            <h2>Mutability</h2>
+            <li> It is impossible to change types of values like strings, numbers and booleans </li>
+            <li> But objects work differently, you can change to different contents at different times </li>
+            <p>
+            let object1 = {value: 10};<br>
+            let object2 = object1;<br>
+            let object3 = {value: 10};<br>
+            console.log(object1 == object2); <br>
+            // → true <br>
+            console.log(object1 == object3);<br>
+            // → false<br>
+            object1.value = 15; <br>
+            console.log(object2.value); <br>
+            // → 15 <br>
+            console.log(object3.value);<br>
+            // → 10 <br>
+            </p>
+            
+            
+            <li> object1 and object2 has same identity</li>
+            
+            
 
                 <hr>
                 <div style="padding: 1rem 1rem;"></div>
 
                 <a class="link secondary-link" href=" ">Read More !</a>
                 <div style="padding : 1rem 0rem"></div>
-                <a class="link primary-link" href="Chp2.html">Read Previous !</a>
+                <a class="link primary-link" href="Chp3.html">Read Previous !</a>
 
 
     </section>
