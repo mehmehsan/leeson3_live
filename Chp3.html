@@ -50,7 +50,7 @@
     <section class="container container-center">
         <h1> Lesson 03 : Functions</h1>
         <hr>
-        
+
         <p> Used to perform a set of operations and are called whenever used</p>
 
         <p> Creetaed by a keyword function before it, consisting of a set of parameters and a body </p>
@@ -81,18 +81,104 @@
                     return chicken () <br>
                     } <br>
 
+
                     <h2> Optional argument </h2>
                     <li> If too many arguements provided it will ignore others and reutrn first one</li>
                     <li> Eg : alert("Hey","Hello","good morning"); returns Hey only </li>
 
-                    <h2> Closure </h2>
-                    <li> a function is called and local variables are re-created </li>
-                    <li> being reference to any instance of local variable is called closure </li>
-
-                    <h2> Recursion </h2>
-                    <li>When function calls itself and stack doesn't gets overflowed is recursive property of function
+                    <li> Eg: function minus(a, b) {
+                        if (b === undefined) return -a;
+                        else return a - b;
+                        }
+                        console.log(minus(10));
+                        // → -10
+                        console.log(minus(10, 5));
+                        // → 5
                     </li>
-                    <li> function calls are 10 times slower than loops </li>
+
+                    <li> Eg2:
+                        function power(base, exponent = 2) {
+                        let result = 1;
+                        for (let count = 0; count < exponent; count++) { result *=base; } return result; }
+                            console.log(power(4)); // → 16 console.log(power(2, 6)); // This overwrites exponent
+                            element // → 64 </li> <h2> Closure
+            </h2>
+            <li> a function is called and local variables are re-created </li>
+            <li> being reference to any instance of local variable is called closure </li>
+
+            <h2> Recursion </h2>
+            <li>When function calls itself and stack doesn't gets overflowed is recursive property of function </li>
+            <li> function calls are 10 times slower than loops </li>
+
+
+            <h2>Arrow function </h2>
+            <li> (=>) used instead of keyword arrow </li>
+            <li> Eg; const power = (base,exponent) => {<br>
+                let result =1 ; <br>
+                for (let count = 0; count < exponent ; count++){ <br>
+                    result*=base;
+                    return result;
+                    };
+            </li>
+            <li> Arrow comes after list of parameters followed by it's body </li>
+
+            <h2> Growing function </h2>
+            <li> Adding more codes means pretending to make more mistakes </li>
+            <li> We can add functionality to add features to comply multiple functions </li>
+
+            <li> Eg: show no. of cows and chicken in three digit format <br>
+
+                function printFarmInventory(cows, chickens) { <br>
+                let cowString = String(cows); <br>
+                while (cowString.length < 3) { <br>
+                    cowString = "0" + cowString; <br>
+                    } <br>
+                    console.log(`${cowString} Cows`); <br>
+                    let chickenString = String(chickens); <br>
+                    while (chickenString.length < 3) { <br>
+                        chickenString = "0" + chickenString;<br>
+                        } <br>
+                        console.log(`${chickenString} Chickens`); <br>
+                        } <br>
+                        printFarmInventory(7, 11); <br>
+            </li>
+            <li>
+                Other way of doing it is add padding </li>
+            function printZeroPaddedWithLabel(number, label) { <br>
+            let numberString = String(number); <br>
+            while (numberString.length < 3) { <br>
+                numberString = "0" + numberString; <br>
+                } <br>
+                console.log(`${numberString} ${label}`); <br>
+                }<br>
+                function printFarmInventory(cows, chickens, pigs) { <br>
+                printZeroPaddedWithLabel(cows, "Cows");<br>
+                printZeroPaddedWithLabel(chickens, "Chickens");<br>
+                printZeroPaddedWithLabel(pigs, "Pigs"); <br>
+                } <br>
+                printFarmInventory(7, 11, 3);<br>
+
+                <li> This zero padding makes function it easier
+                    function zeroPad(number, width) {<br>
+                    let string = String(number); <br>
+                    while (string.length < width) {<br>
+                        string = "0" + string;<br>
+                        }<br>
+                        return string;<br>
+                        }<br>
+                        function printFarmInventory(cows, chickens, pigs) {<br>
+                        console.log(`${zeroPad(cows, 3)} Cows`);<br>
+                        console.log(`${zeroPad(chickens, 3)} Chickens`);<br>
+                        console.log(`${zeroPad(pigs, 3)} Pigs`);<br>
+                        }<br>
+                        printFarmInventory(7, 16, 3);<br>
+                </li>
+
+                <h2> Function and side effects</h2>
+                <li> Functions persist return values called as side effects </li>
+                <li> A pure function is such with no "side effect </li>
+                <li> side effects provide easy way to utilize a function, thus computing speed can be a reason to avoid
+                    purity</li>
 
 
 
@@ -101,11 +187,11 @@
 
 
 
-                    <div style="padding: 1rem 1rem;"></div>
+                <div style="padding: 1rem 1rem;"></div>
 
-                    <a class="link secondary-link" href=" ">Read More !</a>
-                    <div style="padding : 1rem 0rem"></div>
-                    <a class="link primary-link" href="Chp2.html">Read Previous !</a>
+                <a class="link secondary-link" href=" ">Read More !</a>
+                <div style="padding : 1rem 0rem"></div>
+                <a class="link primary-link" href="Chp2.html">Read Previous !</a>
 
 
     </section>
