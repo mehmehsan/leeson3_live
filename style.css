@@ -206,10 +206,42 @@ hr {
     }
 }
 
-table, th, td {
+table,
+th,
+td {
     text-align: center;
     margin: auto;
-    border: 1px solid black;
+
     border-collapse: collapse;
     padding: 1rem 1rem;
+}
+
+table {
+    width: 70%;
+    radius: 5rem;
+    border-bottom: 5px solid #800080;
+}
+
+th {
+    background-color: #800080;
+}
+
+th:first-of-type {
+
+    border-top-left-radius: 1rem;
+
+}
+
+th:last-of-type {
+
+    border-top-right-radius: 1rem;
+
+}
+
+table tr:nth-of-type(odd) {
+    background-color: lightgray;
+}
+
+table tr:nth-of-type(even) {
+    color: #800080;
 }
