@@ -48,62 +48,148 @@
     </section>
 
     <section class="container container-center">
-        <h1> Lesson 04 :  Data structures and arrays <h1>
-            <p> Numbers and strings are units and object comprises of set of units </p>
-            
-            <h2> Data set </h2>
-            <li> Js provides a sequence of data to store values called arrays </li
-            <li> Notations is [] for declaration of an array </li>
-            
-            <h2> Properties </h2>
-            <li> Using myString.length to access length of an array </li>
-            
-            <h2> Methods </h2>
-            <li> every string has toUpperCase() & toLowerCase() property to change casing of letters</li>
-            <li> Properties containing functions are called methods</li>
-            <li> Eg : let sequence = [1, 2, 3];<br>
-            sequence.push(4); <br>
-            sequence.push(5);<br>
-            console.log(sequence);<br>
-            // → [1, 2, 3, 4, 5]<br>
-            console.log(sequence.pop()); <br>
-            // → 5<br>
-            console.log(sequence); <br>
-            // → [1, 2, 3, 4]<br>
-            <br>
-            <li> The push functions add value in end of an array & pop removes last value of an array </li>
-            
-            <p> A stack is a data structure where we push values and pop in opposite order such that things added last is removed first</p>
-            
-            
-            <h2>Objects</h2>
-            <li> Grouping in single values and put it into an array </li>
-            <li> Braces either include a block element or describe an object </li>
-            
-            <li> delete is used to remove named property of an object </li>
-            
-            <h2>Mutability</h2>
-            <li> It is impossible to change types of values like strings, numbers and booleans </li>
-            <li> But objects work differently, you can change to different contents at different times </li>
-            <p>
-            let object1 = {value: 10};<br>
-            let object2 = object1;<br>
-            let object3 = {value: 10};<br>
-            console.log(object1 == object2); <br>
-            // → true <br>
-            console.log(object1 == object3);<br>
-            // → false<br>
-            object1.value = 15; <br>
-            console.log(object2.value); <br>
-            // → 15 <br>
-            console.log(object3.value);<br>
-            // → 10 <br>
-            </p>
-            
-            
-            <li> object1 and object2 has same identity</li>
-            
-            
+        <h1> Lesson 04 : Data structures and arrays <h1>
+            <hr>
+                <p> Numbers and strings are units and object comprises of set of units </p>
+
+                <h2> Data set </h2>
+                <li> Js provides a sequence of data to store values called arrays </li <li> Notations is [] for
+                declaration of an array </li>
+
+                <h2> Properties </h2>
+                <li> Using myString.length to access length of an array </li>
+
+                <h2> Methods </h2>
+                <li> every string has toUpperCase() & toLowerCase() property to change casing of letters</li>
+                <li> Properties containing functions are called methods</li>
+                <li> Eg : let sequence = [1, 2, 3];<br>
+                    sequence.push(4); <br>
+                    sequence.push(5);<br>
+                    console.log(sequence);<br>
+                    // → [1, 2, 3, 4, 5]<br>
+                    console.log(sequence.pop()); <br>
+                    // → 5<br>
+                    console.log(sequence); <br>
+                    // → [1, 2, 3, 4]<br>
+                    <br>
+                <li> The push functions add value in end of an array & pop removes last value of an array </li>
+
+                <p> A stack is a data structure where we push values and pop in opposite order such that things added
+                    last is removed first</p>
+
+                <hr>
+                <h2>Objects</h2>
+                <li> Grouping in single values and put it into an array </li>
+                <li> Braces either include a block element or describe an object </li>
+
+                <li> delete is used to remove named property of an object </li>
+
+                <h2>Mutability</h2>
+                <li> It is impossible to change types of values like strings, numbers and booleans </li>
+                <li> But objects work differently, you can change to different contents at different times </li>
+                <p>
+                    let object1 = {value: 10};<br>
+                    let object2 = object1;<br>
+                    let object3 = {value: 10};<br>
+                    console.log(object1 == object2); <br>
+                    // → true <br>
+                    console.log(object1 == object3);<br>
+                    // → false<br>
+                    object1.value = 15; <br>
+                    console.log(object2.value); <br>
+                    // → 15 <br>
+                    console.log(object3.value);<br>
+                    // → 10 <br>
+                </p>
+
+
+                <li> object1 and object2 has same identity</li>
+
+
+
+                <h2>Lycanroped Log </h2>
+                <li>Jacques sets the following environment
+                <li>
+                    <p>
+                        'Eg: var journal[];'<br>
+                        function addEvents (events, index){<br>
+                        journal push({<br>
+                        events: events, index: index;<br>
+                        });<br>
+
+                        He recorded the events in following manner;<br>
+
+                        addEvents(["work", "pizza","tree"] , false);<br>
+                        addEvents(["work", "icecream","cauliflower"]);<br>
+                        addEvents(["work","cycling","break"],true);<br>
+
+                    </p>
+                <li> Correlation is measure of difference between variables. It ranges between -1 to 1.</li>
+                <li> If 0 then variables are not co-related, -ve means they are related but in an opposite manner
+                <li>
+                <li> the symbol 'φ' denotes co-relativity </li>
+                <p> Eg: No squirrel, No pizza -76
+                    Squirrel, No pizza - 4
+                    No squirrel, pizza - 9
+                    Squirrek, pizza -1
+                </p>
+
+                <li> φ = (n11 n00 - n10 n01) / √ (n1<strong>.</strong>n0<strong>.</strong>n<strong>.</strong>1
+                    n<strong>.</strong>0)
+                </li>
+
+                <li> n01 indicates first variable(squirrel) as <strong>'false'</strong> and second variable (pizza) is
+                    <strong>true</strong>; n01 is 9.</li>
+
+                <li> n1<strong>.</strong> is sum of all variables where variables is <strong>'true'</strong> i.e. 5
+                </li>
+
+                <li> φ => 1 X 76 - 4 X 9 = 40 & √ ( 5 X 85 X 10 X 80 = √ (340000).</li>
+
+                <li> φ = 0.69; which is tiny </li>
+                <li> This means eating pizza doesn't have influence on transformation </li>
+
+                <h3>Computing co-relation</h3>
+                <li> J's has four element [74,9,4,1], other representaion is [[74,9],[4,1]] which is equivalent to [[1
+                    1],[1 0]]</li>
+                    <li>Hence, most significant is squirrel variable and less significant is event variable</li>
+
+                    <li> Below function computes φ </li>
+                    <p> function phi (table) {<br>
+                    return (table[3] * table[0] -table[2] *table[1])/Math.sqrt(( table[2]+table[3]) * (table[0]+table[1]) * (table[1] + table[3]) * (table[0]) + table[2]);
+                    <br>
+                    }<br>
+                    
+                    console.log(phi([76,9,4,1]));<br>
+                    // -> 0.068599434<br>
+                    
+                    <li> For any two event function hasEvent(event,entry){<br>
+                    return entry.events.indexOf(event)!=-1;<br>
+                    }<br>
+                    
+                    <br>
+                    function tableFor (event, journal)<br>
+                    {<br>
+                    
+                    var table = [0,0,0,0];<br>
+                    for( var i=0; i<journal.length;i++){<br>
+                    var entery =  journal[i], index=0;<br>
+                    
+                    if (hasEvent(event,entry))<br>
+                    index+=1;<br>
+                    if (entery.squirrel)<br>
+                    index+=2;<br>
+                    table [index]+=1;<br>
+                    }<br>
+                    return table;<br>
+                    }<br>
+                    
+                    console.log(tableFor("pizza",journal));<br>
+                    //->[76,9,4,1]
+                    <li> The hasEvent function tests whether it contains given event.</li>
+                     <li> indexOf returns value between -1 and 1 </li>
+                     
+                  
 
                 <hr>
                 <div style="padding: 1rem 1rem;"></div>
