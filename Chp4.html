@@ -49,7 +49,7 @@
 
     <section class="container container-center">
         <h1> Lesson 04 : Data structures and arrays <h1>
-            <hr>
+                <hr>
                 <p> Numbers and strings are units and object comprises of set of units </p>
 
                 <h2> Data set </h2>
@@ -152,51 +152,52 @@
                 <h3>Computing co-relation</h3>
                 <li> J's has four element [74,9,4,1], other representaion is [[74,9],[4,1]] which is equivalent to [[1
                     1],[1 0]]</li>
-                    <li>Hence, most significant is squirrel variable and less significant is event variable</li>
+                <li>Hence, most significant is squirrel variable and less significant is event variable</li>
 
-                    <li> Below function computes φ </li>
-                    <p> function phi (table) {<br>
-                    return (table[3] * table[0] -table[2] *table[1])/Math.sqrt(( table[2]+table[3]) * (table[0]+table[1]) * (table[1] + table[3]) * (table[0]) + table[2]);
+                <li> Below function computes φ </li>
+                <p> function phi (table) {<br>
+                    return (table[3] * table[0] -table[2] *table[1])/Math.sqrt(( table[2]+table[3]) *
+                    (table[0]+table[1]) * (table[1] + table[3]) * (table[0]) + table[2]);
                     <br>
                     }<br>
-                    
+
                     console.log(phi([76,9,4,1]));<br>
                     // -> 0.068599434<br>
-                    
+
                     <li> For any two event function hasEvent(event,entry){<br>
-                    return entry.events.indexOf(event)!=-1;<br>
-                    }<br>
-                    
-                    <br>
-                    function tableFor (event, journal)<br>
-                    {<br>
-                    
-                    var table = [0,0,0,0];<br>
-                    for( var i=0; i<journal.length;i++){<br>
-                    var entery =  journal[i], index=0;<br>
-                    
-                    if (hasEvent(event,entry))<br>
-                    index+=1;<br>
-                    if (entery.squirrel)<br>
-                    index+=2;<br>
-                    table [index]+=1;<br>
-                    }<br>
-                    return table;<br>
-                    }<br>
-                    
-                    console.log(tableFor("pizza",journal));<br>
-                    //->[76,9,4,1]
+                        return entry.events.indexOf(event)!=-1;<br>
+                        }<br>
+
+                        <br>
+                        function tableFor (event, journal)<br>
+                        {<br>
+
+                        var table = [0,0,0,0];<br>
+                        for( var i=0; i<journal.length;i++){<br>
+                            var entery = journal[i], index=0;<br>
+
+                            if (hasEvent(event,entry))<br>
+                            index+=1;<br>
+                            if (entery.squirrel)<br>
+                            index+=2;<br>
+                            table [index]+=1;<br>
+                            }<br>
+                            return table;<br>
+                            }<br>
+
+                            console.log(tableFor("pizza",journal));<br>
+                            //->[76,9,4,1]
                     <li> The hasEvent function tests whether it contains given event.</li>
-                     <li> indexOf returns value between -1 and 1 </li>
-                     
-                  
+                    <li> indexOf returns value between -1 and 1 </li>
 
-                <hr>
-                <div style="padding: 1rem 1rem;"></div>
 
-                <a class="link secondary-link" href=" ">Read More !</a>
-                <div style="padding : 1rem 0rem"></div>
-                <a class="link primary-link" href="Chp3.html">Read Previous !</a>
+
+                    <hr>
+                    <div style="padding: 1rem 1rem;"></div>
+
+                    <a class="link secondary-link" href=" ">Read More !</a>
+                    <div style="padding : 1rem 0rem"></div>
+                    <a class="link primary-link" href="Chp3.html">Read Previous !</a>
 
 
     </section>
@@ -211,9 +212,8 @@
         <ul class="social-links list-non-bullet  ">
             <li class="list-item-inline"><a class="link" href="https://www.instagram.com/newbbeee/ "> <img
                         class="insta-img" src="insta.svg" height="30px" width="30px"> </a></li>
-            <li class="list-item-inline"><a class="link" href="https://www.facebook.com/new.bee.1656854 "> <img
-                        class="fb-img" src="fb.svg" height="30px" width="30px">
-                </a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/sandeep_meta"> <img class="fb-img"
+                        src="twitter.svg" height="30px" width="30px"> </a></li>
             <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/sandeep-mehta-b0783b109/">
                     <img class="linkin-img" src="linkin.svg" height="30px" width="30px"> </a></li>
         </ul>
