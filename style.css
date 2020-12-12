@@ -173,28 +173,43 @@ hr {
     animation-duration: 5s;
     animation-name: slidein;
     animation-iteration-count: infinite;
-  
+
 }
 
 @keyframes slidein {
-    
-    0% {transform-origin: 0 100;
+
+    0% {
+        transform-origin: 0 100;
         transform: rotate(90deg);
-       
+
     }
-    25% {transform-origin: 0 100;
-        
+
+    25% {
+        transform-origin: 0 100;
+
         transform: rotate(180deg);
-       
+
     }
-    75% {transform-origin: 0 100;
-        
+
+    75% {
+        transform-origin: 0 100;
+
         transform: rotate(270deg);
-        
+
     }
-    100% {transform-origin: 0 100;
-        
-            transform: rotate(360deg);
-            
+
+    100% {
+        transform-origin: 0 100;
+
+        transform: rotate(360deg);
+
     }
+}
+
+table, th, td {
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem 1rem;
 }
