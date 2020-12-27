@@ -77,7 +77,7 @@ hr {
 .navigation {
     background-color: var(--primary-color);
 
-    padding: 1rem 0rem;
+    padding: .5rem 0rem;
 
     color: white;
 
@@ -96,6 +96,7 @@ hr {
 
     text-align: right;
     color: white;
+    padding: 0rem;
 
 }
 
